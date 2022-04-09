@@ -1,0 +1,663 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C30B664228023ACD00B5D432 /* LemuQRApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30B664128023ACD00B5D432 /* LemuQRApp.swift */; };
+		C30B664428023ACD00B5D432 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30B664328023ACD00B5D432 /* ContentView.swift */; };
+		C30B664628023AD000B5D432 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C30B664528023AD000B5D432 /* Assets.xcassets */; };
+		C30B664928023AD000B5D432 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C30B664828023AD000B5D432 /* Preview Assets.xcassets */; };
+		C30B664D28023AD000B5D432 /* LemuQR WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C30B664C28023AD000B5D432 /* LemuQR WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C30B665228023AD000B5D432 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C30B665128023AD000B5D432 /* Assets.xcassets */; };
+		C30B665828023AD100B5D432 /* LemuQR WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C30B665728023AD100B5D432 /* LemuQR WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C30B665D28023AD100B5D432 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30B665C28023AD100B5D432 /* ContentView.swift */; };
+		C30B665F28023AD100B5D432 /* LemuQRApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30B665E28023AD100B5D432 /* LemuQRApp.swift */; };
+		C30B666128023AD100B5D432 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30B666028023AD100B5D432 /* ComplicationController.swift */; };
+		C30B666328023AD100B5D432 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C30B666228023AD100B5D432 /* Assets.xcassets */; };
+		C30B666628023AD100B5D432 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C30B666528023AD100B5D432 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C30B664E28023AD000B5D432 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C30B663628023ACD00B5D432 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C30B664B28023AD000B5D432;
+			remoteInfo = "LemuQR WatchKit App";
+		};
+		C30B665928023AD100B5D432 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C30B663628023ACD00B5D432 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C30B665628023AD100B5D432;
+			remoteInfo = "LemuQR WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C30B666D28023AD100B5D432 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C30B665828023AD100B5D432 /* LemuQR WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C30B667128023AD100B5D432 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				C30B664D28023AD000B5D432 /* LemuQR WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C30B663E28023ACD00B5D432 /* LemuQR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LemuQR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C30B664128023ACD00B5D432 /* LemuQRApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LemuQRApp.swift; sourceTree = "<group>"; };
+		C30B664328023ACD00B5D432 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C30B664528023AD000B5D432 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C30B664828023AD000B5D432 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C30B664C28023AD000B5D432 /* LemuQR WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LemuQR WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C30B665128023AD000B5D432 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C30B665728023AD100B5D432 /* LemuQR WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "LemuQR WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C30B665C28023AD100B5D432 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C30B665E28023AD100B5D432 /* LemuQRApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LemuQRApp.swift; sourceTree = "<group>"; };
+		C30B666028023AD100B5D432 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		C30B666228023AD100B5D432 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C30B666528023AD100B5D432 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C30B666728023AD100B5D432 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C30B663B28023ACD00B5D432 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C30B665428023AD100B5D432 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C30B663528023ACD00B5D432 = {
+			isa = PBXGroup;
+			children = (
+				C30B664028023ACD00B5D432 /* LemuQR */,
+				C30B665028023AD000B5D432 /* LemuQR WatchKit App */,
+				C30B665B28023AD100B5D432 /* LemuQR WatchKit Extension */,
+				C30B663F28023ACD00B5D432 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C30B663F28023ACD00B5D432 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C30B663E28023ACD00B5D432 /* LemuQR.app */,
+				C30B664C28023AD000B5D432 /* LemuQR WatchKit App.app */,
+				C30B665728023AD100B5D432 /* LemuQR WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C30B664028023ACD00B5D432 /* LemuQR */ = {
+			isa = PBXGroup;
+			children = (
+				C30B664128023ACD00B5D432 /* LemuQRApp.swift */,
+				C30B664328023ACD00B5D432 /* ContentView.swift */,
+				C30B664528023AD000B5D432 /* Assets.xcassets */,
+				C30B664728023AD000B5D432 /* Preview Content */,
+			);
+			path = LemuQR;
+			sourceTree = "<group>";
+		};
+		C30B664728023AD000B5D432 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C30B664828023AD000B5D432 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C30B665028023AD000B5D432 /* LemuQR WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				C30B665128023AD000B5D432 /* Assets.xcassets */,
+			);
+			path = "LemuQR WatchKit App";
+			sourceTree = "<group>";
+		};
+		C30B665B28023AD100B5D432 /* LemuQR WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C30B665C28023AD100B5D432 /* ContentView.swift */,
+				C30B665E28023AD100B5D432 /* LemuQRApp.swift */,
+				C30B666028023AD100B5D432 /* ComplicationController.swift */,
+				C30B666228023AD100B5D432 /* Assets.xcassets */,
+				C30B666728023AD100B5D432 /* Info.plist */,
+				C30B666428023AD100B5D432 /* Preview Content */,
+			);
+			path = "LemuQR WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		C30B666428023AD100B5D432 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C30B666528023AD100B5D432 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C30B663D28023ACD00B5D432 /* LemuQR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C30B667228023AD100B5D432 /* Build configuration list for PBXNativeTarget "LemuQR" */;
+			buildPhases = (
+				C30B663A28023ACD00B5D432 /* Sources */,
+				C30B663B28023ACD00B5D432 /* Frameworks */,
+				C30B663C28023ACD00B5D432 /* Resources */,
+				C30B667128023AD100B5D432 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C30B664F28023AD000B5D432 /* PBXTargetDependency */,
+			);
+			name = LemuQR;
+			productName = LemuQR;
+			productReference = C30B663E28023ACD00B5D432 /* LemuQR.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C30B664B28023AD000B5D432 /* LemuQR WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C30B666E28023AD100B5D432 /* Build configuration list for PBXNativeTarget "LemuQR WatchKit App" */;
+			buildPhases = (
+				C30B664A28023AD000B5D432 /* Resources */,
+				C30B666D28023AD100B5D432 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C30B665A28023AD100B5D432 /* PBXTargetDependency */,
+			);
+			name = "LemuQR WatchKit App";
+			productName = "LemuQR WatchKit App";
+			productReference = C30B664C28023AD000B5D432 /* LemuQR WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		C30B665628023AD100B5D432 /* LemuQR WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C30B666A28023AD100B5D432 /* Build configuration list for PBXNativeTarget "LemuQR WatchKit Extension" */;
+			buildPhases = (
+				C30B665328023AD100B5D432 /* Sources */,
+				C30B665428023AD100B5D432 /* Frameworks */,
+				C30B665528023AD100B5D432 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LemuQR WatchKit Extension";
+			productName = "LemuQR WatchKit Extension";
+			productReference = C30B665728023AD100B5D432 /* LemuQR WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C30B663628023ACD00B5D432 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					C30B663D28023ACD00B5D432 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					C30B664B28023AD000B5D432 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					C30B665628023AD100B5D432 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = C30B663928023ACD00B5D432 /* Build configuration list for PBXProject "LemuQR" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C30B663528023ACD00B5D432;
+			productRefGroup = C30B663F28023ACD00B5D432 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C30B663D28023ACD00B5D432 /* LemuQR */,
+				C30B664B28023AD000B5D432 /* LemuQR WatchKit App */,
+				C30B665628023AD100B5D432 /* LemuQR WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C30B663C28023ACD00B5D432 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C30B664928023AD000B5D432 /* Preview Assets.xcassets in Resources */,
+				C30B664628023AD000B5D432 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C30B664A28023AD000B5D432 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C30B665228023AD000B5D432 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C30B665528023AD100B5D432 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C30B666628023AD100B5D432 /* Preview Assets.xcassets in Resources */,
+				C30B666328023AD100B5D432 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C30B663A28023ACD00B5D432 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C30B664428023ACD00B5D432 /* ContentView.swift in Sources */,
+				C30B664228023ACD00B5D432 /* LemuQRApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C30B665328023AD100B5D432 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C30B665D28023AD100B5D432 /* ContentView.swift in Sources */,
+				C30B665F28023AD100B5D432 /* LemuQRApp.swift in Sources */,
+				C30B666128023AD100B5D432 /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C30B664F28023AD000B5D432 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C30B664B28023AD000B5D432 /* LemuQR WatchKit App */;
+			targetProxy = C30B664E28023AD000B5D432 /* PBXContainerItemProxy */;
+		};
+		C30B665A28023AD100B5D432 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C30B665628023AD100B5D432 /* LemuQR WatchKit Extension */;
+			targetProxy = C30B665928023AD100B5D432 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C30B666828023AD100B5D432 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C30B666928023AD100B5D432 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		C30B666B28023AD100B5D432 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LemuQR WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = T6KQ3WM584;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "LemuQR WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "LemuQR WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cz.martykan.LemuQR.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		C30B666C28023AD100B5D432 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LemuQR WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = T6KQ3WM584;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "LemuQR WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "LemuQR WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cz.martykan.LemuQR.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		C30B666F28023AD100B5D432 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T6KQ3WM584;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = LemuQR_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "LemuQR WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = cz.martykan.LemuQR;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cz.martykan.LemuQR.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		C30B667028023AD100B5D432 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T6KQ3WM584;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = LemuQR_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "LemuQR WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = cz.martykan.LemuQR;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cz.martykan.LemuQR.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		C30B667328023AD100B5D432 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LemuQR/Preview Content\"";
+				DEVELOPMENT_TEAM = T6KQ3WM584;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cz.martykan.LemuQR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C30B667428023AD100B5D432 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LemuQR/Preview Content\"";
+				DEVELOPMENT_TEAM = T6KQ3WM584;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cz.martykan.LemuQR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C30B663928023ACD00B5D432 /* Build configuration list for PBXProject "LemuQR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C30B666828023AD100B5D432 /* Debug */,
+				C30B666928023AD100B5D432 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C30B666A28023AD100B5D432 /* Build configuration list for PBXNativeTarget "LemuQR WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C30B666B28023AD100B5D432 /* Debug */,
+				C30B666C28023AD100B5D432 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C30B666E28023AD100B5D432 /* Build configuration list for PBXNativeTarget "LemuQR WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C30B666F28023AD100B5D432 /* Debug */,
+				C30B667028023AD100B5D432 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C30B667228023AD100B5D432 /* Build configuration list for PBXNativeTarget "LemuQR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C30B667328023AD100B5D432 /* Debug */,
+				C30B667428023AD100B5D432 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C30B663628023ACD00B5D432 /* Project object */;
+}
