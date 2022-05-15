@@ -12,8 +12,9 @@ struct LemuQRApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                ContentView()
+                MasterView()
             }
+            .environment(\.managedObjectContext, CoreDataManager.instance.persistentContainer.viewContext)
         }
     }
 }

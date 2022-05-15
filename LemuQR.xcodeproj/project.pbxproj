@@ -8,17 +8,46 @@
 
 /* Begin PBXBuildFile section */
 		C30B664228023ACD00B5D432 /* LemuQRApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30B664128023ACD00B5D432 /* LemuQRApp.swift */; };
-		C30B664428023ACD00B5D432 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30B664328023ACD00B5D432 /* ContentView.swift */; };
+		C30B664428023ACD00B5D432 /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30B664328023ACD00B5D432 /* MainContentView.swift */; };
 		C30B664628023AD000B5D432 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C30B664528023AD000B5D432 /* Assets.xcassets */; };
 		C30B664928023AD000B5D432 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C30B664828023AD000B5D432 /* Preview Assets.xcassets */; };
-		C30B664D28023AD000B5D432 /* LemuQR WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C30B664C28023AD000B5D432 /* LemuQR WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C30B664D28023AD000B5D432 /* LemuQR.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C30B664C28023AD000B5D432 /* LemuQR.app */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C30B665228023AD000B5D432 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C30B665128023AD000B5D432 /* Assets.xcassets */; };
 		C30B665828023AD100B5D432 /* LemuQR WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C30B665728023AD100B5D432 /* LemuQR WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		C30B665D28023AD100B5D432 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30B665C28023AD100B5D432 /* ContentView.swift */; };
 		C30B665F28023AD100B5D432 /* LemuQRApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30B665E28023AD100B5D432 /* LemuQRApp.swift */; };
 		C30B666128023AD100B5D432 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30B666028023AD100B5D432 /* ComplicationController.swift */; };
 		C30B666328023AD100B5D432 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C30B666228023AD100B5D432 /* Assets.xcassets */; };
 		C30B666628023AD100B5D432 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C30B666528023AD100B5D432 /* Preview Assets.xcassets */; };
+		C3856E0B2830F22C00DDF435 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3856E0A2830F22C00DDF435 /* CloudKit.framework */; };
+		C3856E0E2830F47C00DDF435 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3856E0D2830F47C00DDF435 /* CloudKit.framework */; };
+		C3856E112830F79500DDF435 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3856E102830F79500DDF435 /* CoreDataManager.swift */; };
+		C3856E122830F79500DDF435 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3856E102830F79500DDF435 /* CoreDataManager.swift */; };
+		C3856E152830F84800DDF435 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3856E132830F84800DDF435 /* DataModel.xcdatamodeld */; };
+		C3856E162830F84800DDF435 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3856E132830F84800DDF435 /* DataModel.xcdatamodeld */; };
+		C3856E1F2830FDD400DDF435 /* QRCode+TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3856E1E2830FDD400DDF435 /* QRCode+TestData.swift */; };
+		C3856E202830FDD400DDF435 /* QRCode+TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3856E1E2830FDD400DDF435 /* QRCode+TestData.swift */; };
+		C3856E22283104E200DDF435 /* QRCodeValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3856E21283104B400DDF435 /* QRCodeValues.swift */; };
+		C3856E242831192100DDF435 /* MasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3856E232831192100DDF435 /* MasterView.swift */; };
+		C3856E252831193D00DDF435 /* QRCodesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C3FAAD282B88FE00637484 /* QRCodesViewModel.swift */; };
+		C3856E272831195900DDF435 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3856E262831195900DDF435 /* DetailView.swift */; };
+		C3856E282831199D00DDF435 /* QRCodeValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3856E21283104B400DDF435 /* QRCodeValues.swift */; };
+		C3856E2B28311C2100DDF435 /* RSBarcodes_Swift in Frameworks */ = {isa = PBXBuildFile; productRef = C3856E2A28311C2100DDF435 /* RSBarcodes_Swift */; };
+		C3856E2F2831213700DDF435 /* QRCode+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C3FABA282B8FF200637484 /* QRCode+Image.swift */; };
+		C3856E3228312F1F00DDF435 /* SymbolPicker in Frameworks */ = {isa = PBXBuildFile; productRef = C3856E3128312F1F00DDF435 /* SymbolPicker */; };
+		C3856E342831315900DDF435 /* Color+Encode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3856E332831315900DDF435 /* Color+Encode.swift */; };
+		C3856E352831315900DDF435 /* Color+Encode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3856E332831315900DDF435 /* Color+Encode.swift */; };
+		C3C3FAA8282B87AF00637484 /* MasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C3FAA7282B87AF00637484 /* MasterView.swift */; };
+		C3C3FAAA282B880700637484 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C3FAA9282B880700637484 /* DetailView.swift */; };
+		C3C3FAAE282B88FE00637484 /* QRCodesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C3FAAD282B88FE00637484 /* QRCodesViewModel.swift */; };
+		C3C3FAB0282B8D6300637484 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C3C3FAAF282B8D6300637484 /* Localizable.strings */; };
+		C3C3FAB1282B8D6300637484 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C3C3FAAF282B8D6300637484 /* Localizable.strings */; };
+		C3C3FAB2282B8D6300637484 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C3C3FAAF282B8D6300637484 /* Localizable.strings */; };
+		C3C3FAB5282B8DBE00637484 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C3FAB4282B8DBE00637484 /* String+Localized.swift */; };
+		C3C3FAB6282B8DBE00637484 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C3FAB4282B8DBE00637484 /* String+Localized.swift */; };
+		C3C3FAB8282B8EE200637484 /* QRCodeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C3FAB7282B8EE200637484 /* QRCodeType.swift */; };
+		C3C3FAB9282B8EE200637484 /* QRCodeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C3FAB7282B8EE200637484 /* QRCodeType.swift */; };
+		C3C3FABB282B8FF200637484 /* QRCode+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C3FABA282B8FF200637484 /* QRCode+Image.swift */; };
+		C3C3FABE282B94B200637484 /* EditItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C3FABD282B94B200637484 /* EditItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +85,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				C30B664D28023AD000B5D432 /* LemuQR WatchKit App.app in Embed Watch Content */,
+				C30B664D28023AD000B5D432 /* LemuQR.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,18 +95,36 @@
 /* Begin PBXFileReference section */
 		C30B663E28023ACD00B5D432 /* LemuQR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LemuQR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C30B664128023ACD00B5D432 /* LemuQRApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LemuQRApp.swift; sourceTree = "<group>"; };
-		C30B664328023ACD00B5D432 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C30B664328023ACD00B5D432 /* MainContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentView.swift; sourceTree = "<group>"; };
 		C30B664528023AD000B5D432 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C30B664828023AD000B5D432 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		C30B664C28023AD000B5D432 /* LemuQR WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LemuQR WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C30B664C28023AD000B5D432 /* LemuQR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LemuQR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C30B665128023AD000B5D432 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C30B665728023AD100B5D432 /* LemuQR WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "LemuQR WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C30B665C28023AD100B5D432 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C30B665E28023AD100B5D432 /* LemuQRApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LemuQRApp.swift; sourceTree = "<group>"; };
 		C30B666028023AD100B5D432 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		C30B666228023AD100B5D432 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C30B666528023AD100B5D432 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C30B666728023AD100B5D432 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3856E082830F22700DDF435 /* LemuQR.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LemuQR.entitlements; sourceTree = "<group>"; };
+		C3856E0A2830F22C00DDF435 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.4.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
+		C3856E0C2830F47A00DDF435 /* LemuQR WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "LemuQR WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		C3856E0D2830F47C00DDF435 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS8.5.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
+		C3856E102830F79500DDF435 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		C3856E142830F84800DDF435 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		C3856E1E2830FDD400DDF435 /* QRCode+TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QRCode+TestData.swift"; sourceTree = "<group>"; };
+		C3856E21283104B400DDF435 /* QRCodeValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeValues.swift; sourceTree = "<group>"; };
+		C3856E232831192100DDF435 /* MasterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterView.swift; sourceTree = "<group>"; };
+		C3856E262831195900DDF435 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		C3856E332831315900DDF435 /* Color+Encode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Encode.swift"; sourceTree = "<group>"; };
+		C3C3FAA7282B87AF00637484 /* MasterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterView.swift; sourceTree = "<group>"; };
+		C3C3FAA9282B880700637484 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		C3C3FAAD282B88FE00637484 /* QRCodesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodesViewModel.swift; sourceTree = "<group>"; };
+		C3C3FAAF282B8D6300637484 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = LemuQR/Localizable.strings; sourceTree = SOURCE_ROOT; };
+		C3C3FAB4282B8DBE00637484 /* String+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
+		C3C3FAB7282B8EE200637484 /* QRCodeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeType.swift; sourceTree = "<group>"; };
+		C3C3FABA282B8FF200637484 /* QRCode+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QRCode+Image.swift"; sourceTree = "<group>"; };
+		C3C3FABD282B94B200637484 /* EditItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +132,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3856E2B28311C2100DDF435 /* RSBarcodes_Swift in Frameworks */,
+				C3856E0B2830F22C00DDF435 /* CloudKit.framework in Frameworks */,
+				C3856E3228312F1F00DDF435 /* SymbolPicker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +142,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3856E0E2830F47C00DDF435 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +156,7 @@
 				C30B665028023AD000B5D432 /* LemuQR WatchKit App */,
 				C30B665B28023AD100B5D432 /* LemuQR WatchKit Extension */,
 				C30B663F28023ACD00B5D432 /* Products */,
+				C3856E092830F22C00DDF435 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,7 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				C30B663E28023ACD00B5D432 /* LemuQR.app */,
-				C30B664C28023AD000B5D432 /* LemuQR WatchKit App.app */,
+				C30B664C28023AD000B5D432 /* LemuQR.app */,
 				C30B665728023AD100B5D432 /* LemuQR WatchKit Extension.appex */,
 			);
 			name = Products;
@@ -121,10 +173,17 @@
 		C30B664028023ACD00B5D432 /* LemuQR */ = {
 			isa = PBXGroup;
 			children = (
+				C3856E0F2830F77F00DDF435 /* Managers */,
+				C3856E082830F22700DDF435 /* LemuQR.entitlements */,
+				C3C3FAB3282B8DB300637484 /* Extensions */,
+				C3C543D6282A891E006700FA /* Model */,
+				C3C543D5282A88DA006700FA /* ViewModel */,
+				C3C543D4282A88D2006700FA /* Views */,
 				C30B664128023ACD00B5D432 /* LemuQRApp.swift */,
-				C30B664328023ACD00B5D432 /* ContentView.swift */,
+				C3C3FAAF282B8D6300637484 /* Localizable.strings */,
 				C30B664528023AD000B5D432 /* Assets.xcassets */,
 				C30B664728023AD000B5D432 /* Preview Content */,
+				C3856E132830F84800DDF435 /* DataModel.xcdatamodeld */,
 			);
 			path = LemuQR;
 			sourceTree = "<group>";
@@ -148,7 +207,9 @@
 		C30B665B28023AD100B5D432 /* LemuQR WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				C30B665C28023AD100B5D432 /* ContentView.swift */,
+				C3856E0C2830F47A00DDF435 /* LemuQR WatchKit Extension.entitlements */,
+				C3856E232831192100DDF435 /* MasterView.swift */,
+				C3856E262831195900DDF435 /* DetailView.swift */,
 				C30B665E28023AD100B5D432 /* LemuQRApp.swift */,
 				C30B666028023AD100B5D432 /* ComplicationController.swift */,
 				C30B666228023AD100B5D432 /* Assets.xcassets */,
@@ -164,6 +225,62 @@
 				C30B666528023AD100B5D432 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C3856E092830F22C00DDF435 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3856E0D2830F47C00DDF435 /* CloudKit.framework */,
+				C3856E0A2830F22C00DDF435 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C3856E0F2830F77F00DDF435 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				C3856E102830F79500DDF435 /* CoreDataManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		C3C3FAB3282B8DB300637484 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C3856E332831315900DDF435 /* Color+Encode.swift */,
+				C3C3FAB4282B8DBE00637484 /* String+Localized.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C3C543D4282A88D2006700FA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C3C3FAA9282B880700637484 /* DetailView.swift */,
+				C3C3FABD282B94B200637484 /* EditItemView.swift */,
+				C30B664328023ACD00B5D432 /* MainContentView.swift */,
+				C3C3FAA7282B87AF00637484 /* MasterView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C3C543D5282A88DA006700FA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C3C3FAAD282B88FE00637484 /* QRCodesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C3C543D6282A891E006700FA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C3C3FAB7282B8EE200637484 /* QRCodeType.swift */,
+				C3856E21283104B400DDF435 /* QRCodeValues.swift */,
+				C3C3FABA282B8FF200637484 /* QRCode+Image.swift */,
+				C3856E1E2830FDD400DDF435 /* QRCode+TestData.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +301,10 @@
 				C30B664F28023AD000B5D432 /* PBXTargetDependency */,
 			);
 			name = LemuQR;
+			packageProductDependencies = (
+				C3856E2A28311C2100DDF435 /* RSBarcodes_Swift */,
+				C3856E3128312F1F00DDF435 /* SymbolPicker */,
+			);
 			productName = LemuQR;
 			productReference = C30B663E28023ACD00B5D432 /* LemuQR.app */;
 			productType = "com.apple.product-type.application";
@@ -202,7 +323,7 @@
 			);
 			name = "LemuQR WatchKit App";
 			productName = "LemuQR WatchKit App";
-			productReference = C30B664C28023AD000B5D432 /* LemuQR WatchKit App.app */;
+			productReference = C30B664C28023AD000B5D432 /* LemuQR.app */;
 			productType = "com.apple.product-type.application.watchapp2";
 		};
 		C30B665628023AD100B5D432 /* LemuQR WatchKit Extension */ = {
@@ -218,6 +339,8 @@
 			dependencies = (
 			);
 			name = "LemuQR WatchKit Extension";
+			packageProductDependencies = (
+			);
 			productName = "LemuQR WatchKit Extension";
 			productReference = C30B665728023AD100B5D432 /* LemuQR WatchKit Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
@@ -252,6 +375,10 @@
 				Base,
 			);
 			mainGroup = C30B663528023ACD00B5D432;
+			packageReferences = (
+				C3856E2928311C2000DDF435 /* XCRemoteSwiftPackageReference "RSBarcodes_Swift" */,
+				C3856E3028312F1E00DDF435 /* XCRemoteSwiftPackageReference "SymbolPicker" */,
+			);
 			productRefGroup = C30B663F28023ACD00B5D432 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -269,6 +396,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C30B664928023AD000B5D432 /* Preview Assets.xcassets in Resources */,
+				C3C3FAB0282B8D6300637484 /* Localizable.strings in Resources */,
 				C30B664628023AD000B5D432 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,6 +406,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C30B665228023AD000B5D432 /* Assets.xcassets in Resources */,
+				C3C3FAB1282B8D6300637484 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +415,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C30B666628023AD100B5D432 /* Preview Assets.xcassets in Resources */,
+				C3C3FAB2282B8D6300637484 /* Localizable.strings in Resources */,
 				C30B666328023AD100B5D432 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,8 +427,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C30B664428023ACD00B5D432 /* ContentView.swift in Sources */,
+				C3C3FAAE282B88FE00637484 /* QRCodesViewModel.swift in Sources */,
+				C3C3FAA8282B87AF00637484 /* MasterView.swift in Sources */,
+				C3856E22283104E200DDF435 /* QRCodeValues.swift in Sources */,
+				C3C3FABB282B8FF200637484 /* QRCode+Image.swift in Sources */,
+				C30B664428023ACD00B5D432 /* MainContentView.swift in Sources */,
+				C3C3FAB8282B8EE200637484 /* QRCodeType.swift in Sources */,
+				C3C3FAAA282B880700637484 /* DetailView.swift in Sources */,
 				C30B664228023ACD00B5D432 /* LemuQRApp.swift in Sources */,
+				C3856E352831315900DDF435 /* Color+Encode.swift in Sources */,
+				C3C3FAB5282B8DBE00637484 /* String+Localized.swift in Sources */,
+				C3856E152830F84800DDF435 /* DataModel.xcdatamodeld in Sources */,
+				C3C3FABE282B94B200637484 /* EditItemView.swift in Sources */,
+				C3856E112830F79500DDF435 /* CoreDataManager.swift in Sources */,
+				C3856E1F2830FDD400DDF435 /* QRCode+TestData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,9 +448,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C30B665D28023AD100B5D432 /* ContentView.swift in Sources */,
+				C3856E122830F79500DDF435 /* CoreDataManager.swift in Sources */,
+				C3856E342831315900DDF435 /* Color+Encode.swift in Sources */,
 				C30B665F28023AD100B5D432 /* LemuQRApp.swift in Sources */,
+				C3856E242831192100DDF435 /* MasterView.swift in Sources */,
+				C3856E202830FDD400DDF435 /* QRCode+TestData.swift in Sources */,
+				C3856E272831195900DDF435 /* DetailView.swift in Sources */,
+				C3856E2F2831213700DDF435 /* QRCode+Image.swift in Sources */,
+				C3856E162830F84800DDF435 /* DataModel.xcdatamodeld in Sources */,
 				C30B666128023AD100B5D432 /* ComplicationController.swift in Sources */,
+				C3C3FAB6282B8DBE00637484 /* String+Localized.swift in Sources */,
+				C3856E252831193D00DDF435 /* QRCodesViewModel.swift in Sources */,
+				C3C3FAB9282B8EE200637484 /* QRCodeType.swift in Sources */,
+				C3856E282831199D00DDF435 /* QRCodeValues.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +469,7 @@
 /* Begin PBXTargetDependency section */
 		C30B664F28023AD000B5D432 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = C30B664B28023AD000B5D432 /* LemuQR WatchKit App */;
 			targetProxy = C30B664E28023AD000B5D432 /* PBXContainerItemProxy */;
 		};
@@ -441,17 +594,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "LemuQR WatchKit Extension/LemuQR WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LemuQR WatchKit Extension/Preview Content\"";
-				DEVELOPMENT_TEAM = T6KQ3WM584;
+				DEVELOPMENT_TEAM = MM87FMCT6V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "LemuQR WatchKit Extension/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "LemuQR WatchKit Extension";
-				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_CFBundleDisplayName = LemuQR;
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = LemuQR_WatchKit_Extension.ComplicationController;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = NO;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -473,17 +627,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "LemuQR WatchKit Extension/LemuQR WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LemuQR WatchKit Extension/Preview Content\"";
-				DEVELOPMENT_TEAM = T6KQ3WM584;
+				DEVELOPMENT_TEAM = MM87FMCT6V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "LemuQR WatchKit Extension/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "LemuQR WatchKit Extension";
-				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_CFBundleDisplayName = LemuQR;
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = LemuQR_WatchKit_Extension.ComplicationController;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = NO;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -510,15 +665,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = T6KQ3WM584;
+				DEVELOPMENT_TEAM = MM87FMCT6V;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = LemuQR_WatchKit_Extension;
-				INFOPLIST_KEY_CFBundleDisplayName = "LemuQR WatchKit App";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = cz.martykan.LemuQR;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = cz.martykan.LemuQR.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LemuQR;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -536,15 +690,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = T6KQ3WM584;
+				DEVELOPMENT_TEAM = MM87FMCT6V;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = LemuQR_WatchKit_Extension;
-				INFOPLIST_KEY_CFBundleDisplayName = "LemuQR WatchKit App";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = cz.martykan.LemuQR;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = cz.martykan.LemuQR.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LemuQR;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -560,10 +713,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LemuQR/LemuQR.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LemuQR/Preview Content\"";
-				DEVELOPMENT_TEAM = T6KQ3WM584;
+				DEVELOPMENT_TEAM = MM87FMCT6V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -580,9 +734,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cz.martykan.LemuQR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
 			name = Debug;
 		};
@@ -591,10 +747,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LemuQR/LemuQR.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LemuQR/Preview Content\"";
-				DEVELOPMENT_TEAM = T6KQ3WM584;
+				DEVELOPMENT_TEAM = MM87FMCT6V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -611,9 +768,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cz.martykan.LemuQR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,6";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -658,6 +817,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C3856E2928311C2000DDF435 /* XCRemoteSwiftPackageReference "RSBarcodes_Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/yeahdongcn/RSBarcodes_Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		C3856E3028312F1E00DDF435 /* XCRemoteSwiftPackageReference "SymbolPicker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/xnth97/SymbolPicker.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C3856E2A28311C2100DDF435 /* RSBarcodes_Swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3856E2928311C2000DDF435 /* XCRemoteSwiftPackageReference "RSBarcodes_Swift" */;
+			productName = RSBarcodes_Swift;
+		};
+		C3856E3128312F1F00DDF435 /* SymbolPicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3856E3028312F1E00DDF435 /* XCRemoteSwiftPackageReference "SymbolPicker" */;
+			productName = SymbolPicker;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		C3856E132830F84800DDF435 /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C3856E142830F84800DDF435 /* DataModel.xcdatamodel */,
+			);
+			currentVersion = C3856E142830F84800DDF435 /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C30B663628023ACD00B5D432 /* Project object */;
 }

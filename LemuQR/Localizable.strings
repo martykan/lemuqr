@@ -1,0 +1,12 @@
+/*
+  Localizable.strings
+  LemuQR
+
+  Created by Tomáš Martykán on 11.05.2022.
+  
+*/
+
+"No selection" = "No selection";
+"Create" = "Create";
+"Scan with Camera" = "Scan with Camera";
+"Import from Image" = "Import from Image";
