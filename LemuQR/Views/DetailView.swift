@@ -9,12 +9,14 @@ import UIKit
 import SwiftUI
 import CoreData
 
+/**
+ Screen showing the detail of a code
+ */
 struct DetailView: View {
     @EnvironmentObject private var viewModel: QRCodesViewModel
     @Environment(\.managedObjectContext) private var viewContext
     @State private var title: String?
     @State private var imageData: Data?
-    @State private var previousBrightness: CGFloat?
 
     var objectId: NSManagedObjectID?
     
@@ -23,35 +25,30 @@ struct DetailView: View {
             if objectId != nil, let _imageData = imageData {
                 Image(uiImage: UIImage(data: _imageData)!)
                     .resizable()
-                    .frame(width: 200, height: 200)
+                    .scaledToFit()
                 Text(title ?? "")
             } else {
                 Text("No selection".localized)
             }
-        }.toolbar {
+        }
+        .padding(30)
+        .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 NavigationLink(destination: EditItemView(objectId: objectId)) {
                     Image(systemName: "square.and.pencil")
                 }
             }
         }.onAppear {
-            self.previousBrightness = UIScreen.main.brightness
-            UIScreen.main.brightness = CGFloat(1.0)
-            
             guard let _objectId = objectId, let _code = viewModel.fetchCode(for: _objectId, context: viewContext) else {
                 return
             }
             self.title = _code.title
             self.imageData = _code.getCodeImageData()
         }
-        .onDisappear {
-            if let _previousBrightness = previousBrightness {
-                UIScreen.main.brightness = _previousBrightness
-            }
-        }
     }
 }
 
+// MARK: Previews
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
         DetailView(objectId: getItem().objectID)

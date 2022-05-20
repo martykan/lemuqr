@@ -19,6 +19,9 @@ struct LemuQRApp: App {
         }
     }
     
+    /**
+     Generate sample data for showcasing the app
+     */
     private func addTestData() {
         let request = QRCode.fetchRequest()
         let context = CoreDataManager.instance.persistentContainer.viewContext

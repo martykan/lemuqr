@@ -8,6 +8,9 @@
 import Foundation
 import SwiftUI
 
+/**
+ Describes values that are stored in `QRCode`
+ */
 struct QRCodeValues {
     let type: QRCodeType
     let icon: String

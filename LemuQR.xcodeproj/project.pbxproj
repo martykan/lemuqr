@@ -15,7 +15,6 @@
 		C30B665228023AD000B5D432 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C30B665128023AD000B5D432 /* Assets.xcassets */; };
 		C30B665828023AD100B5D432 /* LemuQR WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C30B665728023AD100B5D432 /* LemuQR WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C30B665F28023AD100B5D432 /* LemuQRApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30B665E28023AD100B5D432 /* LemuQRApp.swift */; };
-		C30B666128023AD100B5D432 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30B666028023AD100B5D432 /* ComplicationController.swift */; };
 		C30B666328023AD100B5D432 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C30B666228023AD100B5D432 /* Assets.xcassets */; };
 		C30B666628023AD100B5D432 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C30B666528023AD100B5D432 /* Preview Assets.xcassets */; };
 		C3856E0B2830F22C00DDF435 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3856E0A2830F22C00DDF435 /* CloudKit.framework */; };
@@ -23,9 +22,7 @@
 		C3856E112830F79500DDF435 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3856E102830F79500DDF435 /* CoreDataManager.swift */; };
 		C3856E122830F79500DDF435 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3856E102830F79500DDF435 /* CoreDataManager.swift */; };
 		C3856E152830F84800DDF435 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3856E132830F84800DDF435 /* DataModel.xcdatamodeld */; };
-		C3856E162830F84800DDF435 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3856E132830F84800DDF435 /* DataModel.xcdatamodeld */; };
 		C3856E1F2830FDD400DDF435 /* QRCode+TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3856E1E2830FDD400DDF435 /* QRCode+TestData.swift */; };
-		C3856E202830FDD400DDF435 /* QRCode+TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3856E1E2830FDD400DDF435 /* QRCode+TestData.swift */; };
 		C3856E22283104E200DDF435 /* QRCodeValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3856E21283104B400DDF435 /* QRCodeValues.swift */; };
 		C3856E242831192100DDF435 /* MasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3856E232831192100DDF435 /* MasterView.swift */; };
 		C3856E252831193D00DDF435 /* QRCodesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C3FAAD282B88FE00637484 /* QRCodesViewModel.swift */; };
@@ -36,6 +33,30 @@
 		C3856E3228312F1F00DDF435 /* SymbolPicker in Frameworks */ = {isa = PBXBuildFile; productRef = C3856E3128312F1F00DDF435 /* SymbolPicker */; };
 		C3856E342831315900DDF435 /* Color+Encode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3856E332831315900DDF435 /* Color+Encode.swift */; };
 		C3856E352831315900DDF435 /* Color+Encode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3856E332831315900DDF435 /* Color+Encode.swift */; };
+		C3C3ECDD2838230600CC14D4 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3C3ECDC2838230600CC14D4 /* WidgetKit.framework */; };
+		C3C3ECDF2838230600CC14D4 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3C3ECDE2838230600CC14D4 /* SwiftUI.framework */; };
+		C3C3ECE22838230600CC14D4 /* LemuQR_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C3ECE12838230600CC14D4 /* LemuQR_Widget.swift */; };
+		C3C3ECE52838230800CC14D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3C3ECE42838230800CC14D4 /* Assets.xcassets */; };
+		C3C3ECE72838230800CC14D4 /* LemuQR_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = C3C3ECE32838230600CC14D4 /* LemuQR_Widget.intentdefinition */; };
+		C3C3ECE82838230800CC14D4 /* LemuQR_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = C3C3ECE32838230600CC14D4 /* LemuQR_Widget.intentdefinition */; };
+		C3C3ECEB2838230800CC14D4 /* LemuQR WidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C3C3ECDB2838230600CC14D4 /* LemuQR WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C3C3ECF92838280700CC14D4 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3C3ECF82838280700CC14D4 /* Intents.framework */; };
+		C3C3ECFC2838280700CC14D4 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C3ECFB2838280700CC14D4 /* IntentHandler.swift */; };
+		C3C3ED002838280700CC14D4 /* LemuQR Intents.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C3C3ECF72838280700CC14D4 /* LemuQR Intents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C3C3ED05283829A200CC14D4 /* LemuQR_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = C3C3ECE32838230600CC14D4 /* LemuQR_Widget.intentdefinition */; };
+		C3C3ED0628382C6600CC14D4 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3856E102830F79500DDF435 /* CoreDataManager.swift */; };
+		C3C3ED0728382C6600CC14D4 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3856E102830F79500DDF435 /* CoreDataManager.swift */; };
+		C3C3ED0828382CE200CC14D4 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3856E132830F84800DDF435 /* DataModel.xcdatamodeld */; };
+		C3C3ED0A28382F1200CC14D4 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3C3ED0928382F1200CC14D4 /* CoreData.framework */; };
+		C3C3ED0C2838399700CC14D4 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3856E132830F84800DDF435 /* DataModel.xcdatamodeld */; };
+		C3C3ED0E2838419300CC14D4 /* QRCodeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C3FAB7282B8EE200637484 /* QRCodeType.swift */; };
+		C3C3ED1B2838421B00CC14D4 /* Color+Encode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3856E332831315900DDF435 /* Color+Encode.swift */; };
+		C3C3ED1C2838421E00CC14D4 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C3FAB4282B8DBE00637484 /* String+Localized.swift */; };
+		C3C3ED1F2838473600CC14D4 /* QRCode+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C3ED1E2838473600CC14D4 /* QRCode+Sort.swift */; };
+		C3C3ED202838473600CC14D4 /* QRCode+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C3ED1E2838473600CC14D4 /* QRCode+Sort.swift */; };
+		C3C3ED212838473600CC14D4 /* QRCode+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C3ED1E2838473600CC14D4 /* QRCode+Sort.swift */; };
+		C3C3ED24283848FE00CC14D4 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = C3C3ED23283848FE00CC14D4 /* CodeScanner */; };
+		C3C3ED2628384CC600CC14D4 /* QRCodeType+AV.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C3ED2528384C9400CC14D4 /* QRCodeType+AV.swift */; };
 		C3C3FAA8282B87AF00637484 /* MasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C3FAA7282B87AF00637484 /* MasterView.swift */; };
 		C3C3FAAA282B880700637484 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C3FAA9282B880700637484 /* DetailView.swift */; };
 		C3C3FAAE282B88FE00637484 /* QRCodesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C3FAAD282B88FE00637484 /* QRCodesViewModel.swift */; };
@@ -65,6 +86,20 @@
 			remoteGlobalIDString = C30B665628023AD100B5D432;
 			remoteInfo = "LemuQR WatchKit Extension";
 		};
+		C3C3ECE92838230800CC14D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C30B663628023ACD00B5D432 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3C3ECDA2838230600CC14D4;
+			remoteInfo = "LemuQR WidgetExtension";
+		};
+		C3C3ECFE2838280700CC14D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C30B663628023ACD00B5D432 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3C3ECF62838280700CC14D4;
+			remoteInfo = "LemuQR Intents";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -90,6 +125,18 @@
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C3C3ECED2838230800CC14D4 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C3C3ECEB2838230800CC14D4 /* LemuQR WidgetExtension.appex in Embed App Extensions */,
+				C3C3ED002838280700CC14D4 /* LemuQR Intents.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -102,7 +149,6 @@
 		C30B665128023AD000B5D432 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C30B665728023AD100B5D432 /* LemuQR WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "LemuQR WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C30B665E28023AD100B5D432 /* LemuQRApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LemuQRApp.swift; sourceTree = "<group>"; };
-		C30B666028023AD100B5D432 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		C30B666228023AD100B5D432 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C30B666528023AD100B5D432 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C30B666728023AD100B5D432 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -112,11 +158,29 @@
 		C3856E0D2830F47C00DDF435 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS8.5.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
 		C3856E102830F79500DDF435 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		C3856E142830F84800DDF435 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
-		C3856E1E2830FDD400DDF435 /* QRCode+TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QRCode+TestData.swift"; sourceTree = "<group>"; };
+		C3856E1E2830FDD400DDF435 /* QRCode+TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QRCode+TestData.swift"; sourceTree = "<group>"; wrapsLines = 0; };
 		C3856E21283104B400DDF435 /* QRCodeValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeValues.swift; sourceTree = "<group>"; };
 		C3856E232831192100DDF435 /* MasterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterView.swift; sourceTree = "<group>"; };
 		C3856E262831195900DDF435 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		C3856E332831315900DDF435 /* Color+Encode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Encode.swift"; sourceTree = "<group>"; };
+		C3C3ECDB2838230600CC14D4 /* LemuQR WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "LemuQR WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3C3ECDC2838230600CC14D4 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		C3C3ECDE2838230600CC14D4 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		C3C3ECE12838230600CC14D4 /* LemuQR_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LemuQR_Widget.swift; sourceTree = "<group>"; };
+		C3C3ECE32838230600CC14D4 /* LemuQR_Widget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = LemuQR_Widget.intentdefinition; sourceTree = "<group>"; };
+		C3C3ECE42838230800CC14D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C3C3ECE62838230800CC14D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3C3ECEC2838230800CC14D4 /* LemuQR WidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "LemuQR WidgetExtension.entitlements"; sourceTree = "<group>"; };
+		C3C3ECF12838243300CC14D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C3C3ECF72838280700CC14D4 /* LemuQR Intents.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "LemuQR Intents.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3C3ECF82838280700CC14D4 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
+		C3C3ECFB2838280700CC14D4 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		C3C3ECFD2838280700CC14D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3C3ED012838280700CC14D4 /* LemuQR Intents.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "LemuQR Intents.entitlements"; sourceTree = "<group>"; };
+		C3C3ED0928382F1200CC14D4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C3C3ED0B28382F3700CC14D4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C3C3ED1E2838473600CC14D4 /* QRCode+Sort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QRCode+Sort.swift"; sourceTree = "<group>"; };
+		C3C3ED2528384C9400CC14D4 /* QRCodeType+AV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QRCodeType+AV.swift"; sourceTree = "<group>"; };
 		C3C3FAA7282B87AF00637484 /* MasterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterView.swift; sourceTree = "<group>"; };
 		C3C3FAA9282B880700637484 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		C3C3FAAD282B88FE00637484 /* QRCodesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodesViewModel.swift; sourceTree = "<group>"; };
@@ -132,6 +196,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3C3ED24283848FE00CC14D4 /* CodeScanner in Frameworks */,
 				C3856E2B28311C2100DDF435 /* RSBarcodes_Swift in Frameworks */,
 				C3856E0B2830F22C00DDF435 /* CloudKit.framework in Frameworks */,
 				C3856E3228312F1F00DDF435 /* SymbolPicker in Frameworks */,
@@ -146,15 +211,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C3C3ECD82838230600CC14D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3C3ECDF2838230600CC14D4 /* SwiftUI.framework in Frameworks */,
+				C3C3ECDD2838230600CC14D4 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3C3ECF42838280700CC14D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3C3ECF92838280700CC14D4 /* Intents.framework in Frameworks */,
+				C3C3ED0A28382F1200CC14D4 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		C30B663528023ACD00B5D432 = {
 			isa = PBXGroup;
 			children = (
+				C3C3ED0B28382F3700CC14D4 /* README.md */,
 				C30B664028023ACD00B5D432 /* LemuQR */,
 				C30B665028023AD000B5D432 /* LemuQR WatchKit App */,
 				C30B665B28023AD100B5D432 /* LemuQR WatchKit Extension */,
+				C3C3ECE02838230600CC14D4 /* LemuQR Widget */,
+				C3C3ECFA2838280700CC14D4 /* LemuQR Intents */,
 				C30B663F28023ACD00B5D432 /* Products */,
 				C3856E092830F22C00DDF435 /* Frameworks */,
 			);
@@ -166,6 +252,8 @@
 				C30B663E28023ACD00B5D432 /* LemuQR.app */,
 				C30B664C28023AD000B5D432 /* LemuQR.app */,
 				C30B665728023AD100B5D432 /* LemuQR WatchKit Extension.appex */,
+				C3C3ECDB2838230600CC14D4 /* LemuQR WidgetExtension.appex */,
+				C3C3ECF72838280700CC14D4 /* LemuQR Intents.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -174,16 +262,17 @@
 			isa = PBXGroup;
 			children = (
 				C3856E0F2830F77F00DDF435 /* Managers */,
-				C3856E082830F22700DDF435 /* LemuQR.entitlements */,
-				C3C3FAB3282B8DB300637484 /* Extensions */,
 				C3C543D6282A891E006700FA /* Model */,
+				C3C3FAB3282B8DB300637484 /* Extensions */,
 				C3C543D5282A88DA006700FA /* ViewModel */,
 				C3C543D4282A88D2006700FA /* Views */,
 				C30B664128023ACD00B5D432 /* LemuQRApp.swift */,
+				C3856E082830F22700DDF435 /* LemuQR.entitlements */,
+				C3C3ECF12838243300CC14D4 /* Info.plist */,
+				C3856E132830F84800DDF435 /* DataModel.xcdatamodeld */,
 				C3C3FAAF282B8D6300637484 /* Localizable.strings */,
 				C30B664528023AD000B5D432 /* Assets.xcassets */,
 				C30B664728023AD000B5D432 /* Preview Content */,
-				C3856E132830F84800DDF435 /* DataModel.xcdatamodeld */,
 			);
 			path = LemuQR;
 			sourceTree = "<group>";
@@ -211,7 +300,6 @@
 				C3856E232831192100DDF435 /* MasterView.swift */,
 				C3856E262831195900DDF435 /* DetailView.swift */,
 				C30B665E28023AD100B5D432 /* LemuQRApp.swift */,
-				C30B666028023AD100B5D432 /* ComplicationController.swift */,
 				C30B666228023AD100B5D432 /* Assets.xcassets */,
 				C30B666728023AD100B5D432 /* Info.plist */,
 				C30B666428023AD100B5D432 /* Preview Content */,
@@ -230,8 +318,12 @@
 		C3856E092830F22C00DDF435 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C3C3ED0928382F1200CC14D4 /* CoreData.framework */,
 				C3856E0D2830F47C00DDF435 /* CloudKit.framework */,
 				C3856E0A2830F22C00DDF435 /* CloudKit.framework */,
+				C3C3ECDC2838230600CC14D4 /* WidgetKit.framework */,
+				C3C3ECDE2838230600CC14D4 /* SwiftUI.framework */,
+				C3C3ECF82838280700CC14D4 /* Intents.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -242,6 +334,28 @@
 				C3856E102830F79500DDF435 /* CoreDataManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		C3C3ECE02838230600CC14D4 /* LemuQR Widget */ = {
+			isa = PBXGroup;
+			children = (
+				C3C3ECEC2838230800CC14D4 /* LemuQR WidgetExtension.entitlements */,
+				C3C3ECE12838230600CC14D4 /* LemuQR_Widget.swift */,
+				C3C3ECE32838230600CC14D4 /* LemuQR_Widget.intentdefinition */,
+				C3C3ECE42838230800CC14D4 /* Assets.xcassets */,
+				C3C3ECE62838230800CC14D4 /* Info.plist */,
+			);
+			path = "LemuQR Widget";
+			sourceTree = "<group>";
+		};
+		C3C3ECFA2838280700CC14D4 /* LemuQR Intents */ = {
+			isa = PBXGroup;
+			children = (
+				C3C3ED012838280700CC14D4 /* LemuQR Intents.entitlements */,
+				C3C3ECFB2838280700CC14D4 /* IntentHandler.swift */,
+				C3C3ECFD2838280700CC14D4 /* Info.plist */,
+			);
+			path = "LemuQR Intents";
 			sourceTree = "<group>";
 		};
 		C3C3FAB3282B8DB300637484 /* Extensions */ = {
@@ -276,9 +390,11 @@
 			isa = PBXGroup;
 			children = (
 				C3C3FAB7282B8EE200637484 /* QRCodeType.swift */,
+				C3C3ED2528384C9400CC14D4 /* QRCodeType+AV.swift */,
 				C3856E21283104B400DDF435 /* QRCodeValues.swift */,
 				C3C3FABA282B8FF200637484 /* QRCode+Image.swift */,
 				C3856E1E2830FDD400DDF435 /* QRCode+TestData.swift */,
+				C3C3ED1E2838473600CC14D4 /* QRCode+Sort.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -294,16 +410,20 @@
 				C30B663B28023ACD00B5D432 /* Frameworks */,
 				C30B663C28023ACD00B5D432 /* Resources */,
 				C30B667128023AD100B5D432 /* Embed Watch Content */,
+				C3C3ECED2838230800CC14D4 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				C30B664F28023AD000B5D432 /* PBXTargetDependency */,
+				C3C3ECEA2838230800CC14D4 /* PBXTargetDependency */,
+				C3C3ECFF2838280700CC14D4 /* PBXTargetDependency */,
 			);
 			name = LemuQR;
 			packageProductDependencies = (
 				C3856E2A28311C2100DDF435 /* RSBarcodes_Swift */,
 				C3856E3128312F1F00DDF435 /* SymbolPicker */,
+				C3C3ED23283848FE00CC14D4 /* CodeScanner */,
 			);
 			productName = LemuQR;
 			productReference = C30B663E28023ACD00B5D432 /* LemuQR.app */;
@@ -345,6 +465,40 @@
 			productReference = C30B665728023AD100B5D432 /* LemuQR WatchKit Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
+		C3C3ECDA2838230600CC14D4 /* LemuQR WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3C3ECF02838230800CC14D4 /* Build configuration list for PBXNativeTarget "LemuQR WidgetExtension" */;
+			buildPhases = (
+				C3C3ECD72838230600CC14D4 /* Sources */,
+				C3C3ECD82838230600CC14D4 /* Frameworks */,
+				C3C3ECD92838230600CC14D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LemuQR WidgetExtension";
+			productName = "LemuQR WidgetExtension";
+			productReference = C3C3ECDB2838230600CC14D4 /* LemuQR WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		C3C3ECF62838280700CC14D4 /* LemuQR Intents */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3C3ED022838280700CC14D4 /* Build configuration list for PBXNativeTarget "LemuQR Intents" */;
+			buildPhases = (
+				C3C3ECF32838280700CC14D4 /* Sources */,
+				C3C3ECF42838280700CC14D4 /* Frameworks */,
+				C3C3ECF52838280700CC14D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LemuQR Intents";
+			productName = "LemuQR Intents";
+			productReference = C3C3ECF72838280700CC14D4 /* LemuQR Intents.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -364,6 +518,12 @@
 					C30B665628023AD100B5D432 = {
 						CreatedOnToolsVersion = 13.3;
 					};
+					C3C3ECDA2838230600CC14D4 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					C3C3ECF62838280700CC14D4 = {
+						CreatedOnToolsVersion = 13.3;
+					};
 				};
 			};
 			buildConfigurationList = C30B663928023ACD00B5D432 /* Build configuration list for PBXProject "LemuQR" */;
@@ -378,6 +538,7 @@
 			packageReferences = (
 				C3856E2928311C2000DDF435 /* XCRemoteSwiftPackageReference "RSBarcodes_Swift" */,
 				C3856E3028312F1E00DDF435 /* XCRemoteSwiftPackageReference "SymbolPicker" */,
+				C3C3ED22283848FE00CC14D4 /* XCRemoteSwiftPackageReference "CodeScanner" */,
 			);
 			productRefGroup = C30B663F28023ACD00B5D432 /* Products */;
 			projectDirPath = "";
@@ -386,6 +547,8 @@
 				C30B663D28023ACD00B5D432 /* LemuQR */,
 				C30B664B28023AD000B5D432 /* LemuQR WatchKit App */,
 				C30B665628023AD100B5D432 /* LemuQR WatchKit Extension */,
+				C3C3ECDA2838230600CC14D4 /* LemuQR WidgetExtension */,
+				C3C3ECF62838280700CC14D4 /* LemuQR Intents */,
 			);
 		};
 /* End PBXProject section */
@@ -420,6 +583,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C3C3ECD92838230600CC14D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3C3ECE52838230800CC14D4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3C3ECF52838280700CC14D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -435,12 +613,15 @@
 				C3C3FAB8282B8EE200637484 /* QRCodeType.swift in Sources */,
 				C3C3FAAA282B880700637484 /* DetailView.swift in Sources */,
 				C30B664228023ACD00B5D432 /* LemuQRApp.swift in Sources */,
+				C3C3ECE82838230800CC14D4 /* LemuQR_Widget.intentdefinition in Sources */,
 				C3856E352831315900DDF435 /* Color+Encode.swift in Sources */,
 				C3C3FAB5282B8DBE00637484 /* String+Localized.swift in Sources */,
 				C3856E152830F84800DDF435 /* DataModel.xcdatamodeld in Sources */,
 				C3C3FABE282B94B200637484 /* EditItemView.swift in Sources */,
+				C3C3ED1F2838473600CC14D4 /* QRCode+Sort.swift in Sources */,
 				C3856E112830F79500DDF435 /* CoreDataManager.swift in Sources */,
 				C3856E1F2830FDD400DDF435 /* QRCode+TestData.swift in Sources */,
+				C3C3ED2628384CC600CC14D4 /* QRCodeType+AV.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,15 +633,39 @@
 				C3856E342831315900DDF435 /* Color+Encode.swift in Sources */,
 				C30B665F28023AD100B5D432 /* LemuQRApp.swift in Sources */,
 				C3856E242831192100DDF435 /* MasterView.swift in Sources */,
-				C3856E202830FDD400DDF435 /* QRCode+TestData.swift in Sources */,
 				C3856E272831195900DDF435 /* DetailView.swift in Sources */,
+				C3C3ED202838473600CC14D4 /* QRCode+Sort.swift in Sources */,
 				C3856E2F2831213700DDF435 /* QRCode+Image.swift in Sources */,
-				C3856E162830F84800DDF435 /* DataModel.xcdatamodeld in Sources */,
-				C30B666128023AD100B5D432 /* ComplicationController.swift in Sources */,
 				C3C3FAB6282B8DBE00637484 /* String+Localized.swift in Sources */,
 				C3856E252831193D00DDF435 /* QRCodesViewModel.swift in Sources */,
+				C3C3ED0C2838399700CC14D4 /* DataModel.xcdatamodeld in Sources */,
 				C3C3FAB9282B8EE200637484 /* QRCodeType.swift in Sources */,
 				C3856E282831199D00DDF435 /* QRCodeValues.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3C3ECD72838230600CC14D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3C3ECE72838230800CC14D4 /* LemuQR_Widget.intentdefinition in Sources */,
+				C3C3ED0628382C6600CC14D4 /* CoreDataManager.swift in Sources */,
+				C3C3ECE22838230600CC14D4 /* LemuQR_Widget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3C3ECF32838280700CC14D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3C3ED1B2838421B00CC14D4 /* Color+Encode.swift in Sources */,
+				C3C3ED0728382C6600CC14D4 /* CoreDataManager.swift in Sources */,
+				C3C3ED1C2838421E00CC14D4 /* String+Localized.swift in Sources */,
+				C3C3ED0E2838419300CC14D4 /* QRCodeType.swift in Sources */,
+				C3C3ED0828382CE200CC14D4 /* DataModel.xcdatamodeld in Sources */,
+				C3C3ED212838473600CC14D4 /* QRCode+Sort.swift in Sources */,
+				C3C3ED05283829A200CC14D4 /* LemuQR_Widget.intentdefinition in Sources */,
+				C3C3ECFC2838280700CC14D4 /* IntentHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,6 +682,16 @@
 			isa = PBXTargetDependency;
 			target = C30B665628023AD100B5D432 /* LemuQR WatchKit Extension */;
 			targetProxy = C30B665928023AD100B5D432 /* PBXContainerItemProxy */;
+		};
+		C3C3ECEA2838230800CC14D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3C3ECDA2838230600CC14D4 /* LemuQR WidgetExtension */;
+			targetProxy = C3C3ECE92838230800CC14D4 /* PBXContainerItemProxy */;
+		};
+		C3C3ECFF2838280700CC14D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3C3ECF62838280700CC14D4 /* LemuQR Intents */;
+			targetProxy = C3C3ECFE2838280700CC14D4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -603,7 +818,6 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "LemuQR WatchKit Extension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = LemuQR;
-				INFOPLIST_KEY_CLKComplicationPrincipalClass = LemuQR_WatchKit_Extension.ComplicationController;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = NO;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -636,7 +850,6 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "LemuQR WatchKit Extension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = LemuQR;
-				INFOPLIST_KEY_CLKComplicationPrincipalClass = LemuQR_WatchKit_Extension.ComplicationController;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = NO;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -711,6 +924,7 @@
 		C30B667328023AD100B5D432 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = LemuQR/LemuQR.entitlements;
@@ -720,6 +934,7 @@
 				DEVELOPMENT_TEAM = MM87FMCT6V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LemuQR/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -745,6 +960,7 @@
 		C30B667428023AD100B5D432 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = LemuQR/LemuQR.entitlements;
@@ -754,6 +970,7 @@
 				DEVELOPMENT_TEAM = MM87FMCT6V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LemuQR/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -773,6 +990,128 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,6";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C3C3ECEE2838230800CC14D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "LemuQR Widget/LemuQR WidgetExtension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MM87FMCT6V;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "LemuQR Widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "LemuQR Widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cz.martykan.LemuQR.LemuQR-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C3C3ECEF2838230800CC14D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "LemuQR Widget/LemuQR WidgetExtension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MM87FMCT6V;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "LemuQR Widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "LemuQR Widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cz.martykan.LemuQR.LemuQR-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C3C3ED032838280700CC14D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "LemuQR Intents/LemuQR Intents.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MM87FMCT6V;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "LemuQR Intents/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "LemuQR Intents";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cz.martykan.LemuQR.LemuQR-Intents";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C3C3ED042838280700CC14D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "LemuQR Intents/LemuQR Intents.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MM87FMCT6V;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "LemuQR Intents/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "LemuQR Intents";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cz.martykan.LemuQR.LemuQR-Intents";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -816,6 +1155,24 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		C3C3ECF02838230800CC14D4 /* Build configuration list for PBXNativeTarget "LemuQR WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3C3ECEE2838230800CC14D4 /* Debug */,
+				C3C3ECEF2838230800CC14D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3C3ED022838280700CC14D4 /* Build configuration list for PBXNativeTarget "LemuQR Intents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3C3ED032838280700CC14D4 /* Debug */,
+				C3C3ED042838280700CC14D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
@@ -835,6 +1192,14 @@
 				minimumVersion = 1.1.0;
 			};
 		};
+		C3C3ED22283848FE00CC14D4 /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -847,6 +1212,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C3856E3028312F1E00DDF435 /* XCRemoteSwiftPackageReference "SymbolPicker" */;
 			productName = SymbolPicker;
+		};
+		C3C3ED23283848FE00CC14D4 /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3C3ED22283848FE00CC14D4 /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
 		};
 /* End XCSwiftPackageProductDependency section */
 

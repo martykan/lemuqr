@@ -9,6 +9,9 @@ import SwiftUI
 import CoreData
 import SymbolPicker
 
+/**
+ View with editing form for the code
+ */
 struct EditItemView: View {
     @EnvironmentObject private var viewModel: QRCodesViewModel
     @Environment(\.managedObjectContext) private var viewContext
@@ -40,7 +43,7 @@ struct EditItemView: View {
                                     .fill(color)
                                     .frame(width: 30, height: 30)
                                 Image(systemName: icon)
-                                    .colorInvert()
+                                    .foregroundColor(Color.white)
                             }
                         }
                     }.buttonStyle(PlainButtonStyle())
@@ -75,11 +78,13 @@ struct EditItemView: View {
                 else {
                     return
                 }
-                codeType = QRCodeType(rawValue: qrCode.type) ?? QRCodeType.QR
-                title = qrCode.title ?? ""
-                content = qrCode.content ?? ""
-                icon = qrCode.icon ?? "qrcode"
-                color = Color.decode(qrCode.color)
+                DispatchQueue.main.async {
+                    codeType = QRCodeType(rawValue: qrCode.type) ?? QRCodeType.QR
+                    title = qrCode.title ?? ""
+                    content = qrCode.content ?? ""
+                    icon = qrCode.icon ?? "qrcode"
+                    color = Color.decode(qrCode.color)
+                }
             }
         }
     }
@@ -100,6 +105,7 @@ struct EditItemView: View {
     }
 }
 
+// MARK: Previews
 struct EditItemView_Previews: PreviewProvider {
     static var previews: some View {
         EditItemView()

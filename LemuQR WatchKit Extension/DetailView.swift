@@ -8,6 +8,9 @@
 import SwiftUI
 import CoreData
 
+/**
+ View showing the code image
+ */
 struct DetailView: View {
     @Environment(\.managedObjectContext) private var viewContext
     var code: QRCode?
@@ -27,6 +30,7 @@ struct DetailView: View {
     }
 }
 
+// MARK: Previews
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
         DetailView(code: getItem())

@@ -7,13 +7,16 @@
 
 import SwiftUI
 
+/**
+ View showing the list of codes
+ */
 struct MasterView: View {
     @EnvironmentObject var viewModel: QRCodesViewModel
     @Environment(\.managedObjectContext) private var viewContext
     
     @State private var selectedItem: QRCode? = nil
     @FetchRequest(
-        sortDescriptors: []
+        sortDescriptors: QRCode.defaultSort
     ) private var fetchResult: FetchedResults<QRCode>
 
     var body: some View {
@@ -22,6 +25,7 @@ struct MasterView: View {
                 NavigationLink(destination: DetailView(code: selectedItem), tag: item, selection: $selectedItem) {
                     HStack {
                         Image(systemName: item.icon ?? "qrcode")
+                            .foregroundColor(Color.white)
                         Text(item.title ?? "")
                     }
                 }
@@ -31,6 +35,7 @@ struct MasterView: View {
     }
 }
 
+// MARK: Previews
 struct MasterView_Previews: PreviewProvider {
     static var previews: some View {
         MasterView().environmentObject(QRCodesViewModel())

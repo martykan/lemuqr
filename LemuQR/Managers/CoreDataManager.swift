@@ -7,6 +7,9 @@
 
 import CoreData
 
+/**
+ Class holding CoreData container
+ */
 class CoreDataManager {
     static let instance = CoreDataManager()
     
@@ -17,6 +20,11 @@ class CoreDataManager {
         if inMemory,
            let storeDescription = persistentContainer.persistentStoreDescriptions.first {
             storeDescription.url = URL(fileURLWithPath: "/dev/null")
+        } else {
+            let containerURL = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.test.lemuqr")!
+            let storeURL = containerURL.appendingPathComponent("DataModel.sqlite")
+            let storeDescription = persistentContainer.persistentStoreDescriptions.first
+            storeDescription?.url = storeURL
         }
         
         persistentContainer.loadPersistentStores { _, error in
@@ -25,11 +33,4 @@ class CoreDataManager {
             }
         }
     }
-    
-    static var preview: CoreDataManager = {
-        let result = CoreDataManager(inMemory: true)
-        let viewContext = result.persistentContainer.viewContext
-        try! QRCode.generateTestData(in: viewContext)
-        return result
-    }()
 }

@@ -7,6 +7,9 @@
 
 import SwiftUI
 
+/**
+ Main view of the app with navigation
+ */
 struct MainContentView: View {
     var body: some View {
         NavigationView {
@@ -18,6 +21,7 @@ struct MainContentView: View {
     }
 }
 
+// MARK: Previews
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         MainContentView()

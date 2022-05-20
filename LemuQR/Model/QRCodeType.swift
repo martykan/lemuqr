@@ -7,6 +7,9 @@
 
 import Foundation
 
+/**
+ Code types that are supported
+ */
 @objc
 enum QRCodeType : Int32 {
     case QR

@@ -11,6 +11,11 @@ import AVFoundation
 import RSBarcodes_Swift
 #endif
 
+/**
+ Extension to get image data from `QRCode` using the `RSBarcodes` library.
+ 
+ - Note: Not supported on watchOS!
+ */
 extension QRCode {
     func getCodeImageData() -> Data? {
 #if !os(watchOS)
